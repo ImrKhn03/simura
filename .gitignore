@@ -1,0 +1,12 @@
+node_modules/
+dist/
+data/*.db
+data/*.db-*
+.env
+.env.*
+!.env.example
+config/local.env
+config/adopted-keys.env
+*.log
+.DS_Store
+data/backups/

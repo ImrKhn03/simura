@@ -1,0 +1,35 @@
+{
+  "name": "simura",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SIMURA — a living world of Kin",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && vite build && tsx scripts/audit-web-build.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "server": "tsx src/server/index.ts",
+    "dev:web": "vite",
+    "genesis": "tsx scripts/genesis.ts",
+    "simulate": "tsx scripts/simulate.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/azure": "^4.0.16",
+    "@ai-sdk/openai-compatible": "^3.0.11",
+    "ai": "^7.0.29",
+    "postprocessing": "6.39.2",
+    "three": "^0.170.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/three": "^0.170.0",
+    "@types/ws": "^8.5.13",
+    "terser": "^5.49.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vitest": "^3.2.7"
+  }
+}

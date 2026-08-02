@@ -1,0 +1,50 @@
+{
+  "map": { "width": 48, "height": 48, "minX": 0, "minY": 0 },
+  "perceptionRadius": 8,
+  "speechRadius": 6,
+  "teachRadius": 4,
+  "moveMaxPerTick": 3,
+  "craftReachRadius": 2,
+  "day": {
+    "lengthTicks": 480,
+    "nightFraction": 0.25,
+    "nightPerceptionFactor": 0.6
+  },
+  "lifespan": {
+    "fadingWarningTicks": 2880,
+    "childEndowmentTicks": 20160,
+    "childCooldownTicks": 2880,
+    "gestationTicks": 340
+  },
+  "affection": {
+    "friend": 40,
+    "love": 100,
+    "proximityRadius": 3,
+    "proximityGain": 0.3,
+    "speechGain": 1.5,
+    "teachGain": 4,
+    "decayRadius": 14,
+    "decayLoss": 0.05
+  },
+  "memory": {
+    "shortTermWindow": 24,
+    "summarizeEveryTicks": 30,
+    "recallCount": 10,
+    "chapterEvery": 8,
+    "maxListedSkills": 12
+  },
+  "perceptionMaxObjects": 12,
+  "eras": {
+    "making": { "namedThings": 12, "requiresWant": true },
+    "building": { "craftedObjects": 15, "skillfileRefinedCount": 2 },
+    "letters": { "successfulTeaches": 3 },
+    "hearth": { "writtenTexts": 6, "structures": 2 }
+  },
+  "flags": {
+    "reproduction": true,
+    "chat": false,
+    "sponsorship": false,
+    "wiki": false,
+    "net": false
+  }
+}
